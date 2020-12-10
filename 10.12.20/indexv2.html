@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = {
+        //     name: "Alex",
+        //     isAdmin: false
+        // }
+
+        // console.log(user)
+
+        // let pop = user
+        
+        // pop.name = "Stepan"
+        // pop.isAdmin = true
+
+        // console.log(user)
+    
+        //-------------------------
+
+        // let user = {
+        //     name: "Alex",
+        //     isAdmin: false
+        // }
+
+        // let perm = {
+        //     canView: false,
+        //     canDelet: false
+        // }
+
+        // let perm1 = {
+        //     canEdit: true
+        // }
+
+        // Object.assign(user, perm, perm1)    // Добовляем свойства чужих обектов
+        // console.log(user)
+
+        //-------------------------
+
+        // function Bob {
+        //     console.log("Bob!")
+        // }
+
+        // let Bob = function() {
+        //     console.log("Bob!!")
+        // }
+
+        //-------------------------
+
+        // let sum = function(a,b) {
+        //     return a + b
+        // }
+        // console.log(sum(1,2))
+
+        //-------------------------
+
+        // let sumi = (c,d) => c + d
+        // console.log(sumi(4,12))
+
+        //-------------------------
+
+        // let mas = [1,2,3]
+        // mas.splice(2,0,23)
+        // console.log(mas.sort())
+
+        //-------------------------
+
+        // let a = [9]
+        // let b = [10]
+
+        // console.log(a == 9)
+        // console.log(b == 10)
+        // console.log(a < b)
+        // console.log(9 < 1)
+
+        //-------------------------
+
+        // function tof() {
+        //     return 10
+        // }
+
+        // tof.text = "Hello"
+
+        // console.log(tof())
+        // console.log(typeof tof)
+        // console.log(typeof tof())
+        // console.log(typeof tof.text)
+
+        //-------------------------
+
+        // let temp = prompt("Сэр, какая сегодня погода? ", "15")
+        // let weather = prompt("Сэр, какая сегодня погода?", "ясно")
+
+        // if (temp < 25 && weather == "ясно") {
+        //     alert("Сэр, Погодка высший сорт, Время для гольфа.")
+        // } else if (temp > 20 || weather == "облочно") {
+        //     alert("Сэр, Погода не задалась ;(")
+        // } else {
+        //     alert("Я вас не понял, Сэр")
+        // }
+
+        // Альтернатива
+
+        // let temp = 20
+        // let weather = "clear"    // Альтернативная запись этого
+        // let a = 10
+
+        let temp = prompt("Какая сегодня погода? ", 21)
+        let weather = prompt("Какая сегодня погода?", "ясно")
+
+        temp >= 20 && weather == ("ясно")?
+        alert("Добро пожаловать"):
+        weather == "Слякоть"?alert("Сегодня плохая погода"):
+        weather == null || weather == "" || weather == undefined?alert("К сожалению, вы не сказали какая погода"):
+        temp < 20 || temp == null || temp == ""?
+        alert("Температура малеенька или некоректна"):
+        alert("Ошибка, сегодня, к сожалению не поиграть")
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [1,2,3,4,5,6,7,8,9]
+
+        a.push(10)
+        a.push(11)
+        console.log(a)
+
+        a.pop(10)
+        console.log(a)
+
+        a.shift()
+        console.log(a)
+        a.unshift()
+        console.log(a)
+        //-------------------------
+        let b = [1,2,3,4,5,6,7,8,9]
+
+        delete b[8]
+        console.log(b)
+        //-------------------------
+        let col = ["red", "gre", "blue", "white"]
+        
+        delete col[3]
+        console.log(col[3])
+        //-------------------------
+        let c = [1,2,3,4,5]
+
+        console.log(c.length)
+        c.push(32)
+        c.push(3567)
+        c.push(-1)
+        console.log(c.length)
+        c.pop(2)
+        c.pop(3)
+        c.pop(4)
+        console.log(c.length)
+        //-------------------------
+        let f = [1,2,3,4,5]
+        
+        f.splice(1,2)   // 1 - с какого элемента масива начинаем работу, 2 - сколько хотим удолить, начиная с 1
+        console.log(f)
+        f.splice(1,0,"two","three")   // Если второй элемент 0, то мы ничего не будем удолять. Трерим элементом перичесляем, что хотим добавить
+        console.log(f)
+        //-------------------------
+        let s = [1,2,3,4,5]
+        let g = ["HELLO"]
+
+        console.log(s.concat([-1,-2,-3,-4,-5,g]))
+        console.log(g.concat(s,[-1,-2,-3,-4,-5]))
+        //-------------------------
+        let x = ["red", "gre", "blue", "white"]
+
+        console.log(x)
+        console.log(x.sort())
+        //-------------------------
+        let z = [1,2,3,4,5]
+
+        console.log(z.reverse())
+    </script>
+</body>
+</html>
