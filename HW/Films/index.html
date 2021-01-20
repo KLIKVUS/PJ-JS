@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Films for u</title>
+</head>
+<body>
+    <div class="site">
+        <a href="" onclick="test()" class="fl_but">
+            <h1>→ Фильмы по возрасту ←</h1>
+        </a>
+    </div>
+
+    <script>
+        function test() {
+            var con = confirm("Вы хотите найти фильм по фильтрам?")
+            if (con == true) {
+                ancet()
+                function ancet() {
+                    // Список фильмов
+                    let firstFilmComplet = ["King's man: Начало", " Земля кочевников", " Глубокие воды", " Кэндимен"]
+                    let secondFilmComplet = [" На высоте мечты", " Сопротивление", " Якари ", " Зверокрекеры"]
+                    let thirdFilmComplete = [" Супер-питомцы", " Миньоны: Грювитация", " Круиз по джунглям ", " Медвежонок Бамси"]
+
+                    // Возраст
+                    let age = prompt("Введите ваш возраст от 0 до 18:", 18)
+                    if (age != undefined) {
+                        // Гендер
+                        let gender = prompt("Выберите ваш пол (М / Ж / ХЗ):")
+                        if (gender != undefined) {
+                            if ((age >= 16 && age <= 18) && ( gender == "Ж" || gender == "ж" || gender == "М" || gender == "м")) {
+                                alert(firstFilmComplet)
+                            } else if ((age >= 12 && age <= 14) && (gender == "Ж" || gender == "ж" ||gender == "М" || gender == "м")) {
+                                alert(secondFilmComplet)
+                            } else if ((age >= 0 && age <= 6) && (gender == "Ж" || gender == "ж" || gender == "М" || gender == "м")) {
+                                alert(thirdFilmComplete)
+                            } else if (age > 18 || (gender != "Ж" | "ж" | "М" | "м" | "Хз" | "хз")) {
+                                let con = confirm("Ваш пол или возраст неверный!\n      Попробовать еще раз?")
+                                if (con == true) {
+                                    ancet()
+                                } else (
+                                    close
+                                )
+                            } else {
+                                alert("Нам не удалось найти подходящий фильм :(")
+                            }
+                        } else {
+                            close
+                        }
+                    } else {
+                        close
+                    }
+                }
+            } else {
+                let topFilms = ["Побег из Шоушенка", " Зеленая миля", " Властелин колец: Возвращение Короля", " ИнтерстелларIMAX", " Властелин колец: Братство кольца", " Властелин колец: Две крепости", " Список Шиндлера", " Форрест Гамп", " Иван Васильевич меняет профессию", " 1+1"]
+                let randFilms = topFilms[Math.floor((Math.random() * topFilms.length))]
+                alert("Рекомендуем к просмотру -" + randFilms)
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- Вывести в консоли инфо о сериале, который смотрит пользователь в зависимости от возроста -->
