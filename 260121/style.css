@@ -1,0 +1,15 @@
+body {
+    background-color: #8d7f6d;
+
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    background-color: cadetblue;
+    border-radius: 7px;
+
+    width: 200px;
+    height: 100px;
+
+    font-size: 35px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow();">ЖМЯК</button>
+    <button onclick="closeWindow();">Закрыть</button>
+
+    <script>
+        let w;
+        let width = Math.round(screen.width / 4)
+        let height = Math.round(screen.height / 2)
+        let wTop = (screen.height - height) / 2
+        let wLeft = (screen.width - width) / 2
+
+        function openWindow() {
+            w = window.open("", "", `width=${width}, height=${height}, top=${wTop}, left=${wLeft}`)
+            w.document.body.style.backgroundColor = getRGB()
+        }
+
+        function closeWindow() {
+            w.close()
+        }
+
+        function getNumber(max = 10, min = 0) {
+            return Math.floor(Math.random() * (max - min) + min)
+        }
+
+        function getRGB() {
+            return `RGB(${getNumber(256)}, ${getNumber(256)}, ${getNumber(256)})`
+        }
+
+        // window.resizeTo(500, 500) - задает новую ширину и высоту
+        // window.resizeBy(500, 500) - изменение размеров путем сложения с новыми
+        // window.moveTo(500, 500) - изменение положения
+        // window.moveBy(500, 500) - сдвинуть на ...
+    </script>
+</body>
+</html>
