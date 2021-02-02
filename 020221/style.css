@@ -1,0 +1,27 @@
+body {
+    font-size: 50px;
+    background-color: #005d5d;
+
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
+    justify-items: right;
+    flex-direction: column;
+}
+
+button {
+    font-size: 50px;
+    background-color: #0d8686;
+    border-radius: 100px;
+    padding: 1% 2%;
+}
+
+table {
+    width: 400px;
+}
+td {
+    border: 1px solid rgb(58, 58, 58);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
