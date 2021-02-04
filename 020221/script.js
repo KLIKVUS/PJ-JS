@@ -1,6 +1,8 @@
 const setNumber = function() {
     let number = getNumber(100, 1)
-    console.log(number)
+    let numSum = 0
+    numSum += number
+    console.log(numSum)
     /*
       firstElementChild - первый дочерний элемент
       lastElementChild - последний дочерний элемент
