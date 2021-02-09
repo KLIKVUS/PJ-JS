@@ -1,0 +1,56 @@
+<!-- 
+●▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬●
+‎‎‎‎‎‎‎‎░░░░░░░░░░░░░░░WELCOME░░░░░░░░░░░░░
+‎‎ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #505b66;
+            text-align: center;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        input, select {
+            margin: 10px;
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+        }
+
+        .ff {
+            background-color: #586470;
+            border: solid 2px #3a4249;
+            border-radius: 7px;
+            box-shadow: 0 2px 5px #363d44;
+
+            width: 250px;
+            height: 150px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="ff">
+        <form action="" id="rating">
+            <input type="text" name="name" placeholder="Введи имя" onchange="getInfo()"> <br>
+            <label for="shoto">Выбири шото:</label>
+            <select name="shoto" id="shoto" onchange="getInfo()">
+                <option value=Шото"">Шото</option>
+                <option value="шото">шото</option>
+                <option value="ШоТо">ШоТо</option>
+            </select> <br>
+            <input type="submit" value="ЖМЯК">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="../FUNCTIONS/script.js"></script>
+</body>
+</html>
