@@ -1,8 +1,3 @@
-<!-- 
-●▬▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬▬●
-‎‎‎‎‎‎‎‎░░░░░░░░░░░░░░░WELCOME░░░░░░░░░░░░░
-‎‎ -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,42 +10,43 @@
 
             display: flex;
             justify-content: center;
+
+            padding-top: 15vh;
         }
 
         input, select {
-            margin: 10px;
-            font-size: 20px;
+            margin: 40px;
+            font-size: 110px;
             font-family: "Times New Roman", Times, serif;
             font-style: italic;
+            border-radius: 8px;
         }
 
         .ff {
             background-color: #586470;
-            border: solid 2px #3a4249;
+            border: solid 8px #3a4249;
             border-radius: 7px;
-            box-shadow: 0 2px 5px #363d44;
+            box-shadow: 0 10px 30px #363d44;
 
-            width: 250px;
-            height: 150px;
+            width: 90%;
+            height: calc(70vh - 40px);
         }
     </style>
     <title>Document</title>
 </head>
 <body>
     <div class="ff">
-        <form action="" id="rating">
+        <form action="" id="rating" onsubmit="getFormbody()">
             <input type="text" name="name" placeholder="Введи имя" onchange="getInfo()"> <br>
-            <label for="shoto">Выбири шото:</label>
+            <label for="shoto" style="font-size: 60px;">Выбири шото:</label>
             <select name="shoto" id="shoto" onchange="getInfo()">
                 <option value=Шото"">Шото</option>
                 <option value="шото">шото</option>
                 <option value="ШоТо">ШоТо</option>
             </select> <br>
-            <input type="submit" value="ЖМЯК">
+            <input type="button" value="ЖМЯК" onclick="getFormbody(this)">
         </form>
     </div>
-
     <script src="script.js"></script>
-    <script src="../FUNCTIONS/script.js"></script>
 </body>
 </html>
