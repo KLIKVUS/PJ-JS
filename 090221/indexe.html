@@ -3,53 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-
-            background-color: #505b66;
-            text-align: center;
-
-            display: flex;
-            flex-direction: column;
-
-            padding: 3% 10% 0% 10%;
-
-            overflow-y: hidden;
-        }
-
-        input, select {
-            margin-top: 3.5%;
-            padding: 1px 10px 1px 10px;
-
-            font-size: 150px;
-            font-family: "Times New Roman", Times, serif;
-            font-style: italic;
-
-            border-radius: 8px;
-        }
-
-        .ff {
-            background-color: #586470;
-            border: solid 8px #3a4249;
-            border-radius: 55px;
-            box-shadow: 0 10px 30px #363d44;
-
-            width: calc(100% - 16px);
-            height: calc(90vh - 40px);
-        }
-        .label {
-            width: 90%;
-        }
-
-        .fff p {
-            font-size: 25px;
-            font-family: "consolas";
-            display: inline-block;
-        }
-    </style>
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="../FUNCTIONS/script.js"></script>
 </head>
 <body>
     <div class="ff">
@@ -61,12 +18,19 @@
                 <option value="шото">шото</option>
                 <option value="ШоТо">ШоТо</option>
             </select> <br>
-            <input type="button" value="ЖМЯК" onclick="getFormbody(this)">
+            <input type="submit" value="ЖМЯК" onclick="getFormbody(this)">
         </form>
+        <a href="" style="font-size: 50px;">Жмякус</a>
     </div>
 
     <div class="fff"></div>
-
+    <div style="background-color: #3a4249; height: 50vh; width: 80%;">
+        <div class="list">
+            <h2>ВСЯКОЕ</h2>
+            <p id="list">. . .</p>
+            <h3>Конец всякого)</h3>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

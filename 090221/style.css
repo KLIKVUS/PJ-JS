@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #505b66;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 3% 10% 0% 10%;
+
+    overflow-y: hidden;
+}
+
+input, select {
+    margin-top: 3.5%;
+
+    font-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+
+    border-radius: 8px;
+}
+
+.ff {
+    background-color: #586470;
+    border: solid 8px #3a4249;
+    border-radius: 55px;
+    box-shadow: 0 10px 30px #363d44;
+
+    width: calc(100% - 16px);
+    height: calc(80vh - 40px);
+
+    overflow: hidden;
+}
+.label {
+    width: 90%;
+}
+
+.fff p {
+    font-size: 25px;
+    font-family: "consolas";
+    display: inline-block;
+}
+
+.list {
+    height: 9vh;
+
+    background-color: #3a4249;
+    overflow-y: scroll;
+
+    line-height: 15px;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:#ecedee;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#56999f;
+}
+
+::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+}
