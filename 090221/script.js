@@ -14,7 +14,6 @@ table.appendChild(logText);
 logText.innerText = "LOGS:";
 let log1 = document.createElement("p");
 table.appendChild(log1);
-
 let tm = 0;
 
 
