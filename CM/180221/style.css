@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #0f860fb9;
+}
+
+header {
+    width: 50%;
+    height: 25vh;
+
+    margin-top: 10%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
+
+    background-color: #02BA6A;
+    border-radius: 14px;
+}
+img {
+    width: 15%;
+}

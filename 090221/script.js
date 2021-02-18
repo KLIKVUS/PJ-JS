@@ -59,6 +59,7 @@ let link = form.nextElementSibling;
 link.onclick = function(event) {
     event.preventDefault();      // Отменить действие по умолчанию
     document.body.style.background = getRGB();
+    a.style.color = getRGB();
 }
 
 form.onsubmit = function(e) {
