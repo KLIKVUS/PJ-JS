@@ -7,19 +7,22 @@ body {
 }
 
 header {
-    width: 50%;
-    height: 25vh;
+    width: 35%;
+    height: 35vh;
 
     margin-top: 10%;
+    padding: 0 20px 0 20px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: space-around; */
+    justify-content: center;
 
     background-color: #02BA6A;
     border-radius: 14px;
+    border: solid 4px #505050;
+    box-shadow: 0 5px 11px rgb(78, 76, 76);
 }
 img {
-    width: 15%;
+    width: 25%;
 }
