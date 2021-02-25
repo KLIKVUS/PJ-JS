@@ -14,6 +14,7 @@ let form = document.getElementById("former");
 
 // Картинки
 let logo = {
+    img0: "500px-brands.svg",
     img1: "address-card.svg",
     img2: "apple-alt.svg",
     img3: "air-freshener.svg"
@@ -44,6 +45,8 @@ seleCard.onclick = function() {
         img.src = "svg/"+logo.img2;
     } else if (seleCard.value == "air-freshener") {
         img.src = "svg/"+logo.img3;
+    } else if (seleCard.value == "500px-brands") {
+        img.src = "svg/"+logo.img0
     }
 }
 
