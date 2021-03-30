@@ -16,7 +16,7 @@ body {
     width: 210vh;
     height: 110vh;
     z-index: -1;
-    /* background-color: darkorchid; */
+    filter: brightness(50%);
 }
 
 .preview {
