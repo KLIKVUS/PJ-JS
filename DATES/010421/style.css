@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: lightseagreen;
+
+    overflow: hidden;
+}
+
+button {
+    padding: 25px;
+    border-radius: 50%;
+
+    outline: none;
+    background-color: lightslategray;
+    border: 2px lightsteelblue solid;
+    color: lightsteelblue;
+    text-transform: uppercase;
+    font: bold 25px sans-serif;
+}
