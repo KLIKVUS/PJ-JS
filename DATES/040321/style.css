@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: teal;
+    font-size: 24px;
+    gap: 15px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+input {
+    outline: none;
+}
+button {
+    outline: none;
+}
+
+
+.some_text {
+    width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background: lightgreen;
+    font: 30px "Comic Sans MS", cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
