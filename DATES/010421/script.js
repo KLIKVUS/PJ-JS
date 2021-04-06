@@ -27,4 +27,4 @@ btn.addEventListener("click", function() {
 });
 btn.addEventListener("click", e => {
     document.body.style.opacity = ((100 - ping * 10) / 100);
-});
+}); 
