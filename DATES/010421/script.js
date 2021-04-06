@@ -1,5 +1,5 @@
 let ping = 0;
-// document.getElementsByTagName("button")[0];
+// document.getElementsByTagName("button")[0]; 
 let btn = document.body.firstElementChild;
 
 // btn.onclick = function() {
