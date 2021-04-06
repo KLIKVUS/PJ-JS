@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    background: darkcyan;
+}
+
+ul {
+    /* height: 0; */
+    /* list-style: none; */
+}
+
+li {
+    height: 0;
+    overflow: hidden;
+}
