@@ -4,16 +4,39 @@ body {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+    position: relative;
 
+    background: #006b6b;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+footer {
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    left: calc(50% - 100px);
+    bottom: 0;
+}
+
+
+.box {
     background: darkcyan;
+    margin: 25px 50px;
+    padding: 50px;
+    border-radius: 16px;
 }
 
-ul {
-    /* height: 0; */
-    /* list-style: none; */
-}
-
-li {
-    height: 0;
+.boxOp {
+    /* height: 30px; */
     overflow: hidden;
+    margin-bottom: 20px;
+    /* background: chartreuse; */
+    user-select: none;
+
+    transition-property: opp;
+    transition-duration: 700ms;
 }
+
