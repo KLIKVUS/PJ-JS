@@ -15,7 +15,7 @@ const showPopup = (msg) => {
     document.body.appendChild(box);
     document.body.classList.add("hidden");
     close.addEventListener("click", (e) => {
-        box.remove;
+        box.remove();
         document.body.classList.remove("hidden");
     })
 }
@@ -25,6 +25,6 @@ msgBtn.addEventListener("click", e => {
     if (text) {
         showPopup(text);
     } else {
-        showPopup("Пустота")
+        showPopup("Пустота");
     }
 })
