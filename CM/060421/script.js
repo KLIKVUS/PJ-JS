@@ -3,14 +3,15 @@ op = Array.from(op);
 
 op.forEach(item => {
     let bro = item.parentNode;
+    let hei = bro.scrollHeight + "px";
     let h = item.firstElementChild;
     bro.style.height = h.scrollHeight + "px"
     item.onclick = e => {
-        if (bro.style.height != "auto") {
-            bro.style.height = "auto";
+        if (bro.style.height != hei) {
+            bro.style.height = hei;
             bro.style.overflow = "visible";
         } else {
-            bro.style.height = e.target.scrollHeight + "px";
+            bro.style.height = h.scrollHeight + "px";
             bro.style.overflow = "hidden";
         }
     }
