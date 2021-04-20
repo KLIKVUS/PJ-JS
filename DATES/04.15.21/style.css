@@ -14,3 +14,16 @@ body {
     font-family: 'Courier New';
     font-size: 15px;
 }
+
+.monthGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 2rem);
+    grid-auto-rows: 2rem;
+    gap: 1rem;
+}
+
+.cell {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid;
+}
