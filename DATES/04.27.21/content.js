@@ -1,0 +1,33 @@
+let images = [
+    "images/Tilda_Icons_27bu_1.svg",
+    "images/Tilda_Icons_27bu_2.svg",
+    "images/Tilda_Icons_27bu_3.svg",
+    "images/Tilda_Icons_27bu_4.svg",
+    "images/Tilda_Icons_27bu_5.svg",
+    "images/Tilda_Icons_27bu_6.svg",
+    "images/Tilda_Icons_27bu_7.svg",
+    "images/Tilda_Icons_27bu_8.svg",
+    "images/Tilda_Icons_27bu_9.svg",
+    "images/Tilda_Icons_27bu_10.svg",
+    "images/Tilda_Icons_27bu_11.svg",
+    "images/Tilda_Icons_27bu_12.svg",
+    "images/Tilda_Icons_27bu_13.svg",
+    "images/Tilda_Icons_27bu_15.svg",
+    "images/Tilda_Icons_27bu_17.svg",
+    "images/Tilda_Icons_27bu_18.svg",
+    "images/Tilda_Icons_27bu_19.svg",
+    "images/Tilda_Icons_27bu_20.svg",
+    "images/Tilda_Icons_27bu_21.svg",
+    "images/Tilda_Icons_27bu_22.svg",
+    "images/Tilda_Icons_27bu_23.svg",
+    "images/Tilda_Icons_27bu_24.svg",
+    "images/Tilda_Icons_27bu_25.svg",
+    "images/Tilda_Icons_27bu_26.svg",
+    "images/Tilda_Icons_27bu_27.svg",
+    "images/Tilda_Icons_27bu_28.svg",
+    "images/Tilda_Icons_27bu_29.svg",
+    "images/Tilda_Icons_27bu_30.svg",
+    "images/Tilda_Icons_27bu_31.svg"
+]
+
+images.sort(() => Math.random() - 0.5);
