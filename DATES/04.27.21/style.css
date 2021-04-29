@@ -53,6 +53,7 @@ body {
     width: 1.5rem;
     height: .5rem;
     position: absolute;
+    left: 25px;
     transform-origin: 1.5rem .1rem;
     transform: rotate(45deg);
     top: 50%;
@@ -65,6 +66,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transform-origin: 1rem -.1rem;
-    transform: rotate(-60deg);
+    transform-origin: .25rem .25rem;
+    transform: rotate(-90deg);
 }
