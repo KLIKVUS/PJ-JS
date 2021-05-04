@@ -1,5 +1,5 @@
 body {
-    background: #252525;
+    background: #3f3f3f;
 }
 
 .container {
@@ -28,6 +28,16 @@ body {
     position: fixed;
     top: 5vh;
     left: 5vw;
+    display: none;
+    /* box-shadow: 0 0 5px #2c2c2c, 0 0 15px 0 #2c2c2c; */
+}
+.lightbox>.box {
+    width: auto;
+    height: calc(100% - 4rem);
+    margin: 2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .lightbox>.cross {
     width: 2rem;
@@ -50,11 +60,11 @@ body {
 }
 .arrow {
     background: #000;
+    cursor: pointer;
     width: 1.5rem;
     height: .5rem;
     position: absolute;
-    left: 25px;
-    transform-origin: 1.5rem .1rem;
+    /* transform-origin: 1.5rem .1rem; */
     transform: rotate(45deg);
     top: 50%;
 }
@@ -64,8 +74,30 @@ body {
     width: 1.5rem;
     height: .5rem;
     position: absolute;
-    top: 0;
-    left: 0;
     transform-origin: .25rem .25rem;
     transform: rotate(-90deg);
+}
+.arrow.right {
+    right: 25px;
+    transform-origin: 0 .15rem;
+    transform: rotate(225deg);
+}
+.arrow.left {
+    left: 40px;
+}
+
+body.light::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+}
+body.light {
+    overflow: hidden;
+}
+body.light .lightbox {
+    display: block;
 }
