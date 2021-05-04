@@ -62,6 +62,4 @@ window.addEventListener("load", (e) => {
     board.addEventListener("mouseup", paintHandler);
     cInp.addEventListener("change", (e) => {color = e.target.value});
     sizeInp.addEventListener("change", (e) => {size = e.target.value});
-
-
 })
