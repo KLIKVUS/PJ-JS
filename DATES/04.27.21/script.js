@@ -14,19 +14,27 @@ window.addEventListener("load", e => {
 
     const lbx = document.querySelector(".lightbox");
     const cross = lbx.querySelector(".cross");
-    const next = lbx.querySelector("arrow.right");
-    const prev = lbx.querySelector("arrow.left");
+    const next = lbx.querySelector(".arrow.right");
+    const prev = lbx.querySelector(".arrow.left");
     const card = document.querySelectorAll(".card");
+
+    var cardIco = "";
 
     const showLightbox = (e) => {
         document.body.classList.add("light")
-        lbx.firstElementChild.style.backgroundImage = `url(${e.target.getAttribute("data-src")})`
+        cardIco = e.target;
+        lbx.firstElementChild.style.backgroundImage = `url(${cardIco.getAttribute("data-src")})`;
     }
     const hideLightbox = () => {
-        document.body.classList.remove("light")
+        document.body.classList.remove("light");
+    }
+    const prevI = () => {
+        cardIco = cardIco.previousSibling;
+        lbx.firstElementChild.style.backgroundImage = `url(${cardIco.getAttribute("data-src")})`;
     }
     const nextI = () => {
-        lbx.firstElementChild.style.backgroundImage = `url(${e.target.getAttribute("data-src")})`
+        cardIco = cardIco.nextSibling;
+        lbx.firstElementChild.style.backgroundImage = `url(${cardIco.getAttribute("data-src")})`;
     }
 
     card.forEach(card => {
@@ -39,6 +47,6 @@ window.addEventListener("load", e => {
             hideLightbox();
         }
     })
-
-    next.addEventListener("click", )
+    prev.addEventListener("click", prevI)
+    next.addEventListener("click", nextI)
 });
