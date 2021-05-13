@@ -13,7 +13,9 @@
     <style>
         .box {
             min-height: 50vh;
-            background-color: cadetblue;
+            border-color: cadetblue;
+            border-right-style: solid;
+            border-left-style: solid;
         }
 
         .col {
@@ -24,21 +26,83 @@
 </head>
 <body>
     <div class="box container">
-        <h1>Twitter-BootStrap1</h1>
-        <div class="h1">Twitter-BootStrap2</div>
         <div class="row">
-            <div class="col col-12"></div>
+            <div class="col col-12">
+                <!-- <h1>Twitter-BootStrap</h1> -->
+                <div class="h1 display-3">Twitter-BootStrap</div>
+            </div>
             <div class="col col-4"></div>
             <div class="col col-4"></div>
             <div class="col col-4"></div>
-            <div class="col col-12"></div>
+            <div class="col col-12">
+                <!--{ table, table-border, table-borderless, table-dark, table-hover, table-striped }-->
+                <table class="table table-light table-hover">
+                    <thead>
+                        <tr>
+                            <th>Caption 1</th>
+                            <th>Caption 2</th>
+                            <th>Caption 3</th>
+                            <th>Caption 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Rerum odit expedita debitis. Modi?</td>
+                            <td>Est accusantium harum temporibus illum?</td>
+                            <td>Aut modi maxime perferendis repellendus!</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Dolorem dolores earum ipsam sit!</td>
+                            <td>Sit quibusdam laudantium neque culpa?</td>
+                            <td>Quos explicabo ad modi ipsa.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Rerum non cupiditate inventore explicabo?</td>
+                            <td>Optio quam natus quos temporibus.</td>
+                            <td>Quisquam aliquam vel excepturi incidunt!</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Corporis asperiores expedita dicta inventore?</td>
+                            <td>Odio officiis nemo accusamus corrupti!</td>
+                            <td>Eos tempora hic odio inventore.</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Cumque similique possimus excepturi repellat!</td>
+                            <td>Eos corporis accusantium magni repellat.</td>
+                            <td>Eum aspernatur harum at repudiandae?</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Molestiae repellat quos voluptatem fugit.</td>
+                            <td>Officia repellat numquam beatae ut!</td>
+                            <td>Atque nemo excepturi quo tempore.</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td class="table-info">Lorem ipsum dolor sit amet.</td>
+                            <td>Culpa excepturi voluptatum error. Recusandae?</td>
+                            <td>Ea autem numquam sed soluta!</td>
+                            <td>Facere nesciunt quo fugiat repellat.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="col col-2"></div>
             <div class="col col-8"></div>
             <div class="col col-2"></div>
             <div class="col col-12"></div>
+            <div class="col col-3 col-sm-6 col-md-3">card 1</div>
+            <div class="col col-3 col-sm-6 col-md-3">card 2</div>
+            <div class="col col-3 col-sm-6 col-md-3">card 3</div>
+            <div class="col col-3 col-sm-6 col-md-3">card 4</div>
+            <div class="col col-12"></div>
         </div>
     </div>
     
-    <div class="box container-fluid"></div>
+    <!-- <div class="box container-fluid"></div> -->
 </body>
 </html>
